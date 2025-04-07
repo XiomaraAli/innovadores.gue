@@ -1,14 +1,13 @@
-Sendero del Sol
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Innovadores Granate - Juego</title>
+  <title>Sendero del Sol - Juego</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="menu">
-    <h1>INNOVADORES GRANATE</h1>
+    <h1>SENDERO DEL SOL</h1>
     <p>Juego educativo: Historia del Perú</p>
 
     <button onclick="empezarJuego()">Jugar</button>
@@ -31,6 +30,7 @@ Sendero del Sol
   <script src="script.js"></script>
 </body>
 </html>
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #8B0000; /* granate */
@@ -69,6 +69,8 @@ button:hover {
 .seccion {
   display: none;
 }
+
+
 function empezarJuego() {
   alert("¡Aquí irá tu juego! Puedes cambiar esta función para que inicie el juego real.");
   // window.location.href = "juego.html"; // si tienes otra página
