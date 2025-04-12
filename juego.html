@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sendero del Sol - Juego</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sendero del Sol</h1>
+    <p>Vidas: <span id="vidas">3</span></p>
+  </header>
+
+  <main>
+    <section id="menu-niveles">
+      <h2>Elige un Nivel</h2>
+      <button onclick="empezarNivel(1)">Nivel 1: Manco Cápac y Mama Ocllo</button>
+      <!-- futuros niveles -->
+      <button disabled>Nivel 2</button>
+      <button disabled>Nivel 3</button>
+    </section>
+
+    <section id="nivel-1" style="display: none;">
+      <h2>🌄 Nivel 1: El origen de los Incas</h2>
+      <img src="img/manco-capac.png" alt="Manco Cápac" width="200">
+      <p id="historia">Manco Cápac y Mama Ocllo emergen del lago Titicaca, enviados por el dios Sol para civilizar el mundo andino.</p>
+
+      <div id="minijuegos">
+        <button onclick="mostrarTrivia()">🧠 Jugar Trivia</button>
+        <button onclick="mostrarMemoria()">🃏 Jugar Memoria</button>
+      </div>
+
+      <div id="resultado-juego" style="display: none;"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
