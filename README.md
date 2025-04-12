@@ -10,7 +10,7 @@
     <h1>SENDERO DEL SOL</h1>
     <p>Juego educativo: Historia del Perú</p>
 
-    <button onclick="empezarJuego()">Jugar</button>
+    <a href="juego.html"><button>Jugar</button></a>
     <button onclick="mostrarInstrucciones()">Instrucciones</button>
     <button onclick="mostrarCreditos()">Créditos</button>
   </div>
