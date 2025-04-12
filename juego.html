@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego - Sendero del Sol</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    #canvas {
+      background-color: #fff;
+      border: 2px solid #000;
+      margin-top: 20px;
+    }
+    .volver {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Comienza tu aventura!</h1>
+  <canvas id="canvas" width="400" height="300"></canvas>
+  <br>
+  <a href="index.html"><button class="volver">Volver al Menú</button></a>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = 50;
+    let y = 50;
+
+    function dibujar() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "blue";
+      ctx.fillRect(x, y, 30, 30); // personaje cuadrado
+    }
+
+    document.addEventListener("keydown", function(event) {
+      const step = 10;
+      if (event.key === "ArrowRight") x += step;
+      if (event.key === "ArrowLeft") x -= step;
+      if (event.key === "ArrowUp") y -= step;
+      if (event.key === "ArrowDown") y += step;
+      dibujar();
+    });
+
+    dibujar();
+  </script>
+</body>
+</html>
